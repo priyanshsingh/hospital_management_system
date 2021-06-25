@@ -68,6 +68,8 @@ a:hover {
     padding-bottom: 16px;
     outline: 0;
     width: 580px;
+    padding-left: 40px;
+    padding-right: 40px;
     border-radius: 32px;
     border: 1px solid #cacaca;
 }
@@ -83,12 +85,14 @@ a:hover {
 }
 
 .button {
+    border: 2px solid transparent;
     margin-left: 10px;
     margin-right: 10px;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 3px;
     background: #f0f0f3;
+    
 }
 
 #links{
@@ -99,6 +103,11 @@ a:hover {
 body{
     display: flex;
     flex-direction: column;
+}
+
+.button:hover{
+    box-shadow: 0 0 2px 2px rgb(216, 216, 216);
+    border: 2px solid;
 }
 
 #footer-content{
