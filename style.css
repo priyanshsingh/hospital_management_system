@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+#nav-bar a{
+    margin-right: 20px;
+}
+
+#nav-bar a.topimg{
+    width: 20px;
+    height: 20px;
+    background: red; 
+    border-radius: 10px;
+}
+
+#mid {
+    margin-top: 100px;
+}
+
+#logo{
+    text-align: center;
+}
+
+#searchbarcontainer{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#searchbar{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    outline: 0;
+    width: 580px;
+    border-radius: 32px;
+    border: 1px solid #cacaca;
+}
