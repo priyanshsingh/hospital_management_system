@@ -1,11 +1,20 @@
-body {
+html, body {
     margin: 0;
+    height: 100%;
 }
 
 #nav-bar {
     display: flex;
     justify-content: flex-end;
     margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 #nav-bar a{
@@ -20,7 +29,11 @@ body {
 }
 
 #mid {
-    margin-top: 100px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #logo{
@@ -30,6 +43,24 @@ body {
 #searchbarcontainer{
     margin-top: 20px;
     text-align: center;
+    position: relative;
+}
+
+#search, #voice {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search {
+    left:20px;
+}
+
+#voice {
+    right: 20px;
 }
 
 #searchbar{
@@ -39,4 +70,38 @@ body {
     width: 580px;
     border-radius: 32px;
     border: 1px solid #cacaca;
+}
+
+#searchbar:hover{
+    box-shadow: 0 0 2px 2px rgb(216, 216, 216);
+}
+
+#buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    background: #f0f0f3;
+}
+
+#links{
+    margin-top: 30px;
+    text-align: center;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-content{
+    background: #eeeeee;
+    border-top: 1px;
 }
