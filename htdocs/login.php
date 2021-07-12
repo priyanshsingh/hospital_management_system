@@ -13,7 +13,7 @@
         if($stmt_result->num_rows > 0){
             $data = $stmt_result->fetch_assoc();
             if($data['password'] === $password)
-                header("LOCATION:details.html");
+                header("LOCATION:login_success.html");
             else
                 echo "<h2>Invalid Email or Password.</h2>";
             
