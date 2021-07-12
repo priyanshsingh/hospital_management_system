@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link href = "style1.css" rel = "stylesheet"/>
+    
+</head>
+<body>
+    <form action="details.php" method="POST">
+        <div class="container">
+          <h1>Patient Details: </h1>
+          <p>Enter the following details: </p>
+          <hr>
+      
+          <label for="firstName"><b>First Name</b></label>
+          <input type="text" placeholder="Enter First Name" name="firstName" id="firstName" required>
+          
+          <label for="age"><b>Age</b></label>
+          <input type="text" placeholder="Patient's Age" name="age" id="lastName" required>
+        
+          <label for="blood"><b>Blood Group</b></label>
+          <input type="text" placeholder="Patient's Blood Group" name="blood" id="email" required>
+      
+          <label for="diagnosed"><b>Diagnosed with: </b></label>
+          <input type="text" placeholder="Patient's Disease Name" name="diagnosed" id="psw" required>
+      
+          <label for="appointment"><b>Appointment Date:</b></label><br><br>
+          <input type="date" id="firstName" name="appointment" required pattern="\d{4}-\d{2}-\d{2}">
+      
+          <button type="submit" class="registerbtn">Submit</button>
+        </div>
+    
+      </form>
+</body>
+</html>
