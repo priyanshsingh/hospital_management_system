@@ -7,15 +7,14 @@
 	$number = $_POST['number'];
 
 	// Database connection
-	$conn = new mysqli('localhost','root','','register2', "3307");
+	$conn = new mysqli('localhost','root','','register3', "3307");
 	if($conn->connect_error){
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into registration1(firstName, lastName, gender, email, password, number) values(?, ?, ?, ?, ?, ?)");
+		$stmt = $conn->prepare("insert into registration(firstName, lastName, gender, email, password, number) values(?, ?, ?, ?, ?, ?)");
 		$stmt->bind_param("sssssi", $firstName, $lastName, $gender, $email, $password, $number);
 		$stmt->execute();
-		
 		header("LOCATION:reg_success.html");
 		$stmt->close();
 		$conn->close();

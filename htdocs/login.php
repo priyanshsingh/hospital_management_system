@@ -2,11 +2,11 @@
     $email = $_POST['email'];
     $password = $_POST['password'];
     
-    $con = new mysqli ("localhost", "root", "", "register2", "3307");
+    $con = new mysqli ("localhost", "root", "", "register3", "3307");
     if($con->connect_error){
         die("Failed to Connect : ".$con->connect_error);
     }else{
-        $stmt = $con->prepare("select * from registration1 where email = ?");
+        $stmt = $con->prepare("select * from registration where email = ?");
         $stmt->bind_param("s", $email);
         $stmt->execute();
         $stmt_result = $stmt->get_result();

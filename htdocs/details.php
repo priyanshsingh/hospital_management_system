@@ -6,7 +6,7 @@
 	$appointment = $_POST['appointment'];
 
 	// Database connection
-	$conn = new mysqli('localhost','root','','register2', "3307");
+	$conn = new mysqli('localhost','root','','register3', "3307");
 	if($conn->connect_error){
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
