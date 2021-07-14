@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+               initial-scale=1.0"/>
+    <link rel="stylesheet" href="payment.css" 
+          class="css" />
+  </head>
+  <body>
+      <form action="card_details.php">
+      <center>
+      <h1 style="color: chartreuse;font-family: Georgia, 'Times New Roman', Times, serif;">Thankyou For Shopping With Us!! Have a Great Day</h1><br>
+    
+      <div class="last-content">
+        <button type="button" class="pay-now-btn">
+           Apply Coupons
+        </button>
+      
+      </div>
+  
+      <div class="card-details">
+        <p>Pay using Credit or Debit card</p>
+  
+        <div class="card-number">
+          <label> Card Number </label>
+          <input
+            type="text"
+            name="number"
+            class="card-number-field"
+            placeholder="###-###-###"/>
+        </div>
+        
+        <div class="date-number">
+            <label for="appointment"><b>Appointment Date:</b></label>
+            <input type="date" name="date" required pattern="\d{4}-\d{2}-\d{2}">
+        </div>
+  
+        <div class="cvv-number">
+          <label> CVV number </label>
+          <input type="text" name="cvv" class="cvv-number-field" 
+                 placeholder="xxx" />
+        </div>
+        <div class="nameholder-number">
+          <label> Card Holder name </label>
+          <input
+            type="text"
+            name="name"
+            class="card-name-field"
+            placeholder="Enter your Name"/>
+        </div>
+        <button type="submit" 
+                class="submit-now-btn">
+          Place Order
+        </button>
+      </div>
+    </div></center>
+      </form>
+  </body>
+</html>
